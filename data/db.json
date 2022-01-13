@@ -1,0 +1,30 @@
+{
+  "admin": [
+    {
+      "name": "Admin",
+      "email": "admin@admin.com"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Ivana",
+      "email": "ivana@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Ana",
+      "email": "ana@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Matea",
+      "email": "matea@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Gabriela",
+      "email": "gabriela@gmail.com"
+    }
+  ]
+}
