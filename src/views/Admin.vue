@@ -1,5 +1,6 @@
 <template>
 
+
   <h1 class="user">Lista korisnika</h1>
   <div class="home">
     <div v-if="users.length">
@@ -16,6 +17,9 @@
       </div>
     </div>
   </div>
+
+
+
 </template>
 
 <script>
@@ -32,10 +36,16 @@ export default {
         .then(res => res.json())
         .then(data => this.users = data)
         .catch(err => console.log(err.message))
+
+
   },
   methods:{
 
+<<<<<<< HEAD
   }
+=======
+
+>>>>>>> accaa97513050f50655bf6b55f5542e4d39b10ab
 }
 </script>
 
@@ -50,6 +60,8 @@ export default {
   box-shadow: 1px 2px 3px rgba(0,0,0,0.05);
   border-left: 4px solid #e90074;
   width: 20%;
+
+
 }
 .actions {
   display: flex;
@@ -70,5 +82,8 @@ export default {
   margin-left: 45%;
   font-family: 'The Nautigal', cursive;
   font-size: 300%;
+
+
 }
+
 </style>
