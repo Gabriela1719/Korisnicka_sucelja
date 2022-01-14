@@ -1,37 +1,38 @@
 <template>
   <KNav/>
-  <div class="home">
-    <div class="project1">
-      <div class="powders">
-        <h1>Bourjois</h1>
-        <img src="../assets/puder1.jpeg">
-        <star-rating />
-      </div>
+  <div v-for="powder in powders" :key="powder.title">
+    <div class="home">
+      <div class="project1">
+        <div class="powders">
+          <span>{{ powder.title }}</span>
+          <img class="img" :src="powder.icon">
+          <div class="dots" style="text-align:center">
+            <star-rating />
+          </div>
         </div>
-    <div class="project1">
-      <div class="powders">
-        <h1>FITme</h1>
-        <img src="../assets/puder2.jpg">
-        <star-rating />
-      </div>
-    </div>
-    <div class="project1">
-      <div class="powders">
-        <h1>Catrice</h1>
-        <img src="../assets/puder3.jpg">
-        <star-rating />
       </div>
     </div>
   </div>
+  <label>Comments</label>
 </template>
-
+<Comments/>
 <script>
 import KNav from "../components/KNav";
 import StarRating from 'vue-star-rating'
 export default {
   name: "TopLista",
-  components: {KNav, StarRating},
-
+  components: { KNav, StarRating},
+  data(){
+    return{
+      comment: '',
+      powders:[
+        { title: 'Bourjois', icon: require('../assets/puder1.jpeg')},
+        { title: 'FITme', icon: require('../assets/puder2.jpg')},
+        { title: 'Catrice', icon: require('../assets/puder3.jpg')},
+        { title: 'MAC', icon: require('../assets/puder6.jpg')}
+      ],
+    }
+  },
 }
 </script>
 

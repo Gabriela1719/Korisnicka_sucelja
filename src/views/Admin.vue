@@ -6,6 +6,7 @@
       <div v-for="user in users" :key="user.id">
         <div class="project">
           <div class="actions">
+            <span class="user-name">{{ user.id }}</span>
             <span class="user-name">{{ user.name }}</span>
             <span class="user-email">{{ user.email }}</span>
             <span class="material-icons"><img src="../assets/delete.png"></span>
@@ -20,9 +21,11 @@
 <script>
 export default {
   name: "Admin",
+  props: ['user'],
   data(){
     return{
       users: [],
+     // uri: 'http://localhost:3000/users/' + this.user.id
     }
   },
   mounted() {
@@ -31,6 +34,7 @@ export default {
         .then(data => this.users = data)
         .catch(err => console.log(err.message))
   },
+
 }
 </script>
 

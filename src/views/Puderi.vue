@@ -1,8 +1,8 @@
 <template>
   <KNav/>
   <div class="powders">
-    <img class="p1" src="../assets/p1.jpg">
-    <h1 class="h1">Perfect skin:</h1>
+    <img class="p1" src="../assets/poz.jpg">
+    <h1 class="h1">Perfect skin powder for you</h1>
     <h3 class="h3">Dream or Reality?</h3>
     <h4 class="h4">Pick your favourite brand!</h4>
   </div>
@@ -13,8 +13,7 @@
           <span>{{ powder.title }}</span>
           <img class="img" :src="powder.icon">
         <h4>Colors</h4> <br>
-        <button class="button4" @click="onClick">Show colors</button>
-        <div class="dots" style="text-align:center" v-if="showColors">
+        <div class="dots" style="text-align:center" >
           <span class="dot"></span>
           <span class="dot2"></span>
           <span class="dot3"></span>
@@ -37,21 +36,18 @@ export default {
         { title: 'Bourjois', icon: require('../assets/puder1.jpeg'), text: ''},
         { title: 'FITme', icon: require('../assets/puder2.jpg')},
         { title: 'Catrice', icon: require('../assets/puder3.jpg')},
+        { title: 'Estee Lauder', icon: require('../assets/puder4.jpg')},
+        { title: 'Max Factor', icon: require('../assets/puder5.jpg')},
+        { title: 'MAC', icon: require('../assets/puder6.jpg')},
+        { title: 'Artdeco', icon: require('../assets/puder7.jpg')}
+
+
       ],
-      showColors: false
+
+
     }
   },
-  mounted() {
-    fetch('http://localhost:3000/powders')
-    .then(res => res.json())
-    .then(data => this.powders = data)
-    .catch(err => console.log(err.message))
-  },
-  methods:{
-    onClick() {
-      this.showColors = !this.showColors
-    }
-  }
+
 }
 </script>
 
@@ -72,13 +68,13 @@ p{
 .h3{
   color: #691665;
   position: absolute;
-  bottom: 55%;
+  bottom: 50%;
   left: 20%
 }
 .h4{
   color: #691665;
   position: absolute;
-  bottom: 50%;
+  bottom: 40%;
   left: 20%
 }
 .powders{

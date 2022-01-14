@@ -1,10 +1,4 @@
 {
-  "admin": [
-    {
-      "name": "Admin",
-      "email": "admin@admin.com"
-    }
-  ],
   "users": [
     {
       "id": 1,
