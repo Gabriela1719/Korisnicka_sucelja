@@ -13,15 +13,15 @@
       </div>
     </div>
   </div>
-  <label>Comments</label>
+  <Comments/>
 </template>
-<Comments/>
 <script>
 import KNav from "../components/KNav";
 import StarRating from 'vue-star-rating'
+import Comments from "../components/Comments";
 export default {
   name: "TopLista",
-  components: { KNav, StarRating},
+  components: {Comments, KNav, StarRating},
   data(){
     return{
       comment: '',
@@ -43,7 +43,7 @@ export default {
   padding: 10px 20px;
   border-radius: 4px;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.05);
-  border-left: 4px solid #e90074;
+  border-left: 4px solid #691665FF;
   width: 2%;
   margin-left: 10%;
 }

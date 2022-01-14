@@ -25,7 +25,6 @@ export default {
   data(){
     return{
       users: [],
-     // uri: 'http://localhost:3000/users/' + this.user.id
     }
   },
   mounted() {
@@ -34,7 +33,9 @@ export default {
         .then(data => this.users = data)
         .catch(err => console.log(err.message))
   },
+  methods:{
 
+  }
 }
 </script>
 

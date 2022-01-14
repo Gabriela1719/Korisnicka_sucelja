@@ -40,14 +40,9 @@ export default {
         { title: 'Max Factor', icon: require('../assets/puder5.jpg')},
         { title: 'MAC', icon: require('../assets/puder6.jpg')},
         { title: 'Artdeco', icon: require('../assets/puder7.jpg')}
-
-
       ],
-
-
     }
   },
-
 }
 </script>
 
@@ -80,10 +75,9 @@ p{
 .powders{
   font-family: 'The Nautigal', cursive;
   font-size: 300%;
-}
-.puder1{
-  width: 20%;
-  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .project1 {
   margin-top: 5%;
@@ -91,12 +85,8 @@ p{
   border-radius: 4px;
   border-left: 4px solid #642244;
   width: 2%;
-  margin-left: 10%;
-}
-.powders {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-left: 5%;
+
 }
 .img{
   width: 800%;
