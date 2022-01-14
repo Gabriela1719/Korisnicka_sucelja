@@ -55,8 +55,8 @@ export default {
 
 <style scoped>
 #app {
-  background: #91298c;
-  color: #fff;
+  background: #ff6666;
+  color: whitesmoke;
   opacity: 0.7;
   letter-spacing: 0.04em;
   text-align: center;
@@ -68,6 +68,9 @@ export default {
   border-radius: 3%;
   font-family: 'The Nautigal', cursive;
   font-size: 100%;
+  border-bottom-color: black;
+
+
 
 }
 li {
@@ -75,24 +78,49 @@ li {
   text-align: left;
   padding: 10px 0;
   border-bottom: 1px solid #555;
+  color:black;
+  font-size: 100%;
+  border-bottom-color: black;
+
+
 }
 ul {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0 35px;
+  color:black;
+  border-bottom-color: black;
+
+
 }
 hr {
   margin: 25px 0 0 32px;
   width: 300px;
   border-top: 0;
   border-bottom: 1px solid #555;
-}
+  color:black;
+  border-bottom-color: black;
+  }
 input {
   font-family: 'Playfair Display', serif;
-  width: 280px;
-  margin: 30px 0;
-  padding: 8px 10px;
+  width: 600px;
+  margin: 80px 0;
+  padding: 8px 20px;
   outline: 0;
+  color: black;
+  border-bottom-color: black;
+
 }
+h1 {
+  color: black;
+  font-size:250%;
+  padding-bottom:10px;
+
+}
+h3{
+  color: black;
+  font-size: 200%;
+}
+
 </style>

@@ -26,8 +26,8 @@
 export default {
   name: "Admin",
   props: ['user'],
-  data(){
-    return{
+  data() {
+    return {
       users: [],
     }
   },
@@ -36,17 +36,12 @@ export default {
         .then(res => res.json())
         .then(data => this.users = data)
         .catch(err => console.log(err.message))
-
-
   },
-  methods:{
-
-<<<<<<< HEAD
-  }
-=======
-
->>>>>>> accaa97513050f50655bf6b55f5542e4d39b10ab
 }
+
+
+
+
 </script>
 
 <style lang="scss">
