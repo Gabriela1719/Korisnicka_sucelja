@@ -103,9 +103,10 @@ nav {
 .btn-logout{
   margin-top: 0.6%;
   margin-left: 82%;
-  width: 2%;
+  width: 6%;
   height: 1%;
   background: linear-gradient(#561562, #f1ecec, #500e50);
   opacity: 0.7;
+  float: right;
 }
 </style>
