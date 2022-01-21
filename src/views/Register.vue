@@ -30,9 +30,10 @@
 import Navbar from "../components/Navbar";
 export default {
   name: "App",
-  components: {Navbar},
+  components: { Navbar},
 }
 </script>
+
 <style>
 *:before,
 *:after{
@@ -42,12 +43,12 @@ export default {
 }
 .background{
   width: 480px;
-  height: 720px;
+  height: 730px;
   position: absolute;
   transform: translate(-50%,-50%);
   left: 50%;
   top: 50%;
-  color: white;
+  color: pink;
 }
 .background .shape{
   height: 200px;
@@ -73,28 +74,29 @@ export default {
   bottom: -80px;
 }*/
 form{
-  height: 75%;
+  height: 90%;
   width: 400px;
-  background-color: rgba(255,255,255,0.13);
+  background-color: pink;
   position: absolute;
   transform: translate(-50%,-50%);
-  top: 50%;
+  top: 58%;
   left: 50%;
   border-radius: 10px;
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 40px rgba(8,7,16,0.6);
-  padding: 50px 35px;
+  border: 2px solid palevioletred;
+  box-shadow: 0 0 40px white;
+  padding: 13px 25px;
+
 }
 form *{
   font-family: 'Poppins',sans-serif;
-  color: #2f2f2f;
+  color: white;
   letter-spacing: 0.5px;
   outline: none;
   border: none;
 }
 form h3{
-  font-size: 32px;
+  font-size: 2px;
   font-weight: 500;
   line-height: 42px;
   text-align: center;
@@ -102,16 +104,16 @@ form h3{
 
 label{
   display: block;
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 16px;
-  font-weight: 500;
-  color: #2f2f2f;
+  font-weight: 400;
+  color: white;
 }
 input{
   display: block;
   height: 50px;
   width: 100%;
-  background-color: rgba(3, 3, 3, 0.07);
+  background-color: lightpink;
   border-radius: 3px;
   padding: 0 10px;
   margin-top: 8px;
@@ -124,8 +126,8 @@ input{
 .btn-register{
   margin-top: 50px;
   width: 100%;
-  background: linear-gradient(white, #989894, white);
-  color: #080710;
+  background: linear-gradient(pink, palevioletred, pink);
+  color: white;
   padding: 15px 0;
   font-size: 18px;
   font-weight: 600;
@@ -153,4 +155,5 @@ input{
 .social i{
   margin-right: 4px;
 }
+
 </style>
