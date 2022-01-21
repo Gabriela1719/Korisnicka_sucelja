@@ -6,35 +6,37 @@
     <h3 class="h3">Dream or Reality?</h3>
     <h4 class="h4">Pick your favourite brand!</h4>
   </div>
-  <button class="button button1" @click="showDetails()">Show Details</button>
-  <div v-for="powder in powders" :key="powder.title">
-  <div class="home">
-    <div class="project1">
-      <div class="powders">
-          <span>{{ powder.title }}</span>
-        <p class="description" v-if="show">  {{ powder.text }} </p>
-          <img class="img" :src="powder.icon">
-          <h4>Colors</h4> <br>
-        <div class="dots" style="text-align:center" >
-          <span class="dot"></span>
-          <span class="dot2"></span>
-          <span class="dot3"></span>
-          <span class="dot4"></span>
-        </div>
-        </div>
-      </div>
+  <div class="ppp">
+   <div><img class="p-1" src="../assets/puder1.jpeg"><h1 id="h1">Bourjois</h1>
+     <button @click="showDetails" class="b1">Click for details</button>
+   </div>
+    <div class="border"><img class="p-2" src="../assets/puder2.jpg"><h1 id="h2">FITme</h1>
+      <bourjois class="bourjois" v-if="show"/>
+      <button @click="showDetails" class="b2">Click for details</button>
     </div>
+    <div><img class="p-3" src="../assets/puder3.jpg"><h1 id="h3">Catrice</h1><button class="b3">Click for details</button></div>
+    <div><img class="p-4" src="../assets/puder4.jpg"><h1 id="h4">Estee Lauder</h1>
+      <button class="b4">Click for details</button></div>
+    <div><img class="p-5" src="../assets/puder5.jpg"><h1 id="h5">Max Factor</h1>
+      <button class="b5">Click for details</button></div>
+    <div><img class="p-7" src="../assets/puder7.jpg"><h1 id="h7">Artdecoo</h1>
+      <button class="b7">Click for details</button></div>
+    <div><img class="p-6" src="../assets/puder6.jpg"><h1 id="h6">MAC</h1>
+      <button class="b6">Click for details</button></div>
+    <div><img class="p-8" src="../assets/puder8.jpg"><h1 id="h8">Dior</h1>
+      <button class="b8">Click for details</button></div>
   </div>
 </template>
 <script>
 import KNav from "../components/KNav";
+import Bourjois from "../components/Bourjois";
 export  default {
   name: "Puderi",
-  components: {KNav},
+  components: {Bourjois, KNav},
   data() {
     return {
       show: false,
-      powders: [
+    /*  powders: [
         {id: 1, title: 'Bourjois', icon: require('../assets/puder1.jpeg'), text:"besprijekoran izgled do 16 sati" +
               "srednje prekrivanje, ujednačava ton kože i ne začepljuje pore\n" +
               "kristalni pigmenti reflektiraju svjetlost i daju vašoj koži zdrav sjaj\n" +
@@ -53,7 +55,7 @@ export  default {
         {id: 5, title: 'Max Factor', icon: require('../assets/puder5.jpg'), text:"Max Factor Facefinity All Day Flawless 3u1 tekući puder je primer, korektor i puder u jednom proizvodu. Korektor prekriva podočnjake, crvenilo, prištiće i nepravilnosti na koži. Primer priprema kožu za iznimnu dugotrajnost pudera. Puder sa zaštitnim faktorom 20 štiti kožu od UV zraka i osigurava potpuno prekrivanje i mat efekt. Zahvaljujući novoj Flexi-Hold™ tehnologiji puder se pomiče zajedno s kožom, ne puca i ne nakuplja se u pregibima na koži te osigurava ugodan osjećaj tijekom cijelog dana!"},
         {id: 6, title: 'MAC', icon: require('../assets/puder6.jpg'), text:"MAC Studio Fix Fluid, 30 ml, Puder za žene, Make-up MAC Studio Fix Fluid ujednačit će ten vaše kože i prekriti sve njene nepravilnosti.Svojstva:za dugotrajni efektštiti od sunčevih zrakazaglađuje površinu kožeNačin upotrebe:Nježnim potezima nanesite make-up na lice. Prstima, spužvicom ili kistom ravnomjerno i temeljito razmažite."},
         {id: 7, title: 'Artdeco', icon: require('../assets/puder7.jpg'), text:"MAC Studio Fix Fluid, 30 ml, Puder za žene, Make-up MAC Studio Fix Fluid ujednačit će ten vaše kože i prekriti sve njene nepravilnosti.Svojstva:za dugotrajni efektštiti od sunčevih zrakazaglađuje površinu kožeNačin upotrebe:Nježnim potezima nanesite make-up na lice. Prstima, spužvicom ili kistom ravnomjerno i temeljito razmažite."}
-      ],
+      ],*/
     }
   },
   methods: {
@@ -66,12 +68,177 @@ export  default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=The+Nautigal&display=swap');
+
+.b1{
+  position: absolute;
+  left: 19%;
+  top: 190%;
+  font-family: 'The Nautigal', cursive;
+}
+.b2{
+  position: absolute;
+  left: 35%;
+  top: 190%;
+  font-family: 'The Nautigal', cursive;
+}
+.b3{
+  position: absolute;
+  left: 55%;
+  top: 190%;
+  font-family: 'The Nautigal', cursive;
+}
+.b4{
+  position: absolute;
+  left: 18.5%;
+  top: 245%;
+  font-family: 'The Nautigal', cursive;
+}
+.b5{
+  position: absolute;
+  left: 34.5%;
+  top: 245%;
+  font-family: 'The Nautigal', cursive;
+}
+.b7{
+  position: absolute;
+  left: 75%;
+  top: 190%;
+  font-family: 'The Nautigal', cursive;
+}
+.b6{
+  position: absolute;
+  left: 56%;
+  top: 245%;
+  font-family: 'The Nautigal', cursive;
+}
+.b8{
+  position: absolute;
+  left: 75%;
+  top: 245%;
+  font-family: 'The Nautigal', cursive;
+}
+#h1{
+  position: absolute;
+  left: 34%;
+  top: 185%;
+  font-family: 'The Nautigal', cursive;
+}
+
+#h2{
+  position: absolute;
+  left: 18%;
+  top: 185%;
+  font-family: 'The Nautigal', cursive;
+}
+
+#h3{
+  position: absolute;
+  left: 54.5%;
+  top: 185%;
+  font-family: 'The Nautigal', cursive;
+}
+#h4{
+  position: absolute;
+  left: 73%;
+  top: 185%;
+  font-family: 'The Nautigal', cursive;
+}
+#h5{
+  position: absolute;
+  left: 16%;
+  top: 240%;
+  font-family: 'The Nautigal', cursive;
+}
+#h7{
+  position: absolute;
+  left: 34%;
+  top: 240%;
+  font-family: 'The Nautigal', cursive;
+}
+#h6{
+  position: absolute;
+  left: 55%;
+  top: 240%;
+  font-family: 'The Nautigal', cursive;
+}
+#h8{
+  position: absolute;
+  left: 75%;
+  top: 240%;
+  font-family: 'The Nautigal', cursive;
+}
+.p-2{
+  position: absolute;
+  left: 13%;
+  width: 15%;
+  border: 5px solid #555;
+}
+.p-1{
+  position: absolute;
+  left: 29%;
+  width: 15%;
+  border: 5px solid #555;
+}
+.p-3{
+  position: absolute;
+  left: 49%;
+  width: 15%;
+  border: 5px solid #555;
+}
+.p-4{
+  position: absolute;
+  left: 69%;
+  width: 15%;
+  border: 5px solid #555;
+}
+.p-6{
+  position: absolute;
+  left: 50%;
+  top: 210%;
+  width: 15%;
+  border: 5px solid #555;
+}
+.p-7{
+  position: absolute;
+  left: 29%;
+  top: 210%;
+  width: 15%;
+  border: 5px solid #555;
+}
+.p-5{
+  position: absolute;
+  left: 13%;
+  width: 15%;
+  top: 210%;
+  border: 5px solid #555;
+}
+.p-8{
+  position: absolute;
+  left: 69%;
+  top: 210%;
+  width: 15%;
+  border: 5px solid #555;
+}
+.ppp{
+  margin-top: 10%;
+}
+.naslov{
+  font-family: 'The Nautigal', cursive;
+  font-size: 200%;
+  position: absolute;
+  left: 10%;
+}
+img{
+  width: 30%;
+}
 .description{
   color: black;
   font-size: 20%;
   font-family: 'Luxurious Roman', cursive;
   margin-left: 20%;
 }
+
+
 .p1{
  width: 100%;
 }
@@ -100,89 +267,12 @@ export  default {
   justify-content: space-between;
   align-items: center;
 }
-.puder1{
-  width: 20%;
-  background-color: red;
-}
-.project1 {
-  margin-top: 5%;
-  padding: 10px 100px;
-  border-radius: 4px;
-  border-left: 4px solid #642244;
-  width: 2%;
-  margin-left: 5%;
-  margin-left: 10%;
-}
-.powders {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .img{
   width: 800%;
 }
-.dot {
-  height: 40px;
-  width: 40px;
-  background-color: #FFEBCD;
-  border-radius: 50%;
-  display: inline-block;
-  float-displace: auto;
+.bourjois{
+  position: absolute;
+  top:192%;
+  left: 28%;
 }
-.dot2 {
-  height: 40px;
-  width: 40px;
-  background-color: #FFDEAD;
-  border-radius: 50%;
-  display: inline-block;
-  float: left;
-}
-.dot3 {
-  height: 40px;
-  width: 40px;
-  background-color: #b47844;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dot4 {
-  height: 40px;
-  width: 40px;
-  background-color: #ad814f;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dots{
-  margin-left: 70%;
-}
-.button4{
-  background-color: #e7e7e7;
-  width: 500%;
-  height: 20%;
-  margin-left: 50%;
-}
-.show-more{
-  width: 50%;
-}
-.details{
-
-}
-.button {
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  margin-top: 5%;
-  margin-left: 45%;
-}
-
-
-.button1 {
-  background:linear-gradient(#b051b0, #5d235d, #cc6dcc);
-}
-
 </style>
