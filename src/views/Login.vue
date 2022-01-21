@@ -14,10 +14,10 @@
           required
       >
 
-      <label>Email</label>
+      <label>Password</label>
       <input
-          v-model="email"
-          type="email"
+          v-model="password"
+          type="password"
           required
       >
       <button class="btn-login">Log In</button>
