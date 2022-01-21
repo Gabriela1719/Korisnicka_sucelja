@@ -36,7 +36,10 @@ export default {
         .then(res => res.json())
         .then(data => this.users = data)
         .catch(err => console.log(err.message))
+
+
   },
+
 }
 
 
@@ -49,7 +52,7 @@ export default {
 .project {
   margin-top: 5%;
   margin-left: 40% ;
-  background: white;
+  background: palevioletred;
   padding: 10px 20px;
   border-radius: 4px;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.05);
@@ -62,6 +65,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: pink ;
 }
 .material-icons {
   font-size: 24px;
@@ -74,7 +78,7 @@ export default {
 }
 .user {
   margin-top: 5%;
-  margin-left: 45%;
+  margin-left: 46%;
   font-family: 'The Nautigal', cursive;
   font-size: 300%;
 
@@ -82,3 +86,4 @@ export default {
 }
 
 </style>
+
