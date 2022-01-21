@@ -2,7 +2,7 @@
   <KNav/>
   <div v-for="powder in powders" :key="powder.title">
     <div class="home">
-      <div class="project1">
+      <div class>
         <div class="powders">
           <span>{{ powder.title }}</span>
           <img class="img" :src="powder.icon">
@@ -26,10 +26,12 @@ export default {
     return{
       comment: '',
       powders:[
-        { title: 'Bourjois', icon: require('../assets/puder1.jpeg')},
-        { title: 'FITme', icon: require('../assets/puder2.jpg')},
-        { title: 'Catrice', icon: require('../assets/puder3.jpg')},
-        { title: 'MAC', icon: require('../assets/puder6.jpg')}
+        { title: '1.'+ ''+'Bourjois', icon: require('../assets/puder1.jpeg')},
+        { title: '2.' + ''+'FITme', icon: require('../assets/puder2.jpg')},
+        { title: '3.'+ ''+'Catrice', icon: require('../assets/puder3.jpg')},
+        { title: '4.' + ''+ 'MAC', icon: require('../assets/puder6.jpg')},
+        { title: '5.' + ''+ 'Estee Lauder', icon: require('../assets/puder4.jpg')},
+
       ],
     }
   },
@@ -37,20 +39,15 @@ export default {
 </script>
 
 <style scoped>
-.project1 {
-  margin-top: 5%;
-  background: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.05);
-  border-left: 4px solid #691665FF;
-  width: 2%;
-  margin-left: 10%;
-}
+
 .powders {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  margin-top: 5%;
+  width: 2%;
+  margin-left: 25%;
 }
 img{
   width: 800%;
